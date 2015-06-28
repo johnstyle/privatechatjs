@@ -1,0 +1,12 @@
+{
+  "name": "privatechatjs",
+  "version": "1.0.0",
+  "description": "Privace chat room",
+  "dependencies": {
+    "materialize": "latest",
+    "jquery":"latest"
+  },
+  "authors": [
+    "Jonathan SAHM <contact@johnstyle.fr>"
+  ]
+}

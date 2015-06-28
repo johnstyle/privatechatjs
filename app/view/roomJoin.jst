@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row">
+        <div class="col s12 m12 l12">
+
+            <form id="form-create" action="/signup" method="post">
+
+                <input type="hidden" name="room" value="{{=it.room}}"/>
+
+                <div class="card hoverable">
+                    <div class="card-content">
+
+                        <span class="card-title teal-text">Joint private room</span>
+
+                        <div class="input-field">
+                            <label class="teal-text">Nickname</label>
+                            <input class="teal-text" type="text" name="nick"/>
+                        </div>
+                    </div>
+                    <div class="card-action">
+                        <div>
+                            <button type="submit" class="waves-effect waves-light btn">Ok</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+</div>

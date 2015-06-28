@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{=it.title}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="/components/materialize/dist/css/materialize.min.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body class="teal lighten-5">
+
+    <header>
+        <nav class="top-nav teal">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a class="page-title">Private chat</a>
+                    {{? it.menu }}
+                       <ul class="right hide-on-med-and-down">
+                        {{~ it.menu :item:i }}
+                            <li><a href="{{=item.link}}">{{=item.name}}</a></li>
+                        {{~}}
+                      </ul>
+                    {{?}}
+                </div>
+
+            </div>
+        </nav>
+        {{? it.users }}
+            <ul class="side-nav fixed teal lighten-3" id="nav-mobile" style="width: 240px;">
+                {{~ it.users :user:i }}
+                    <li class="bold"><a href="#" class="white-text">{{=user.nick}}</a></li>
+                {{~}}
+            </ul>
+        {{?}}
+    </header>
+
+    <main>
+        {{=it.main}}
+    </main>
+
+    <script src="/components/jquery/dist/jquery.min.js"></script>
+    <script src="/components/materialize/dist/js/materialize.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "privatechatjs",
+  "version": "1.0.0",
+  "description": "Privace chat room",
+  "dependencies": {
+    "base64-url": "latest",
+    "body-parser": "latest",
+    "dot": "latest",
+    "ent": "latest",
+    "express": "latest",
+    "express-session": "latest",
+    "ms": "latest",
+    "socket.io": "latest",
+    "stripttags": "latest",
+    "uniqid": "latest"
+  },
+  "authors": [
+    "Jonathan SAHM <contact@johnstyle.fr>"
+  ]
+}

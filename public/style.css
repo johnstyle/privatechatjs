@@ -1,0 +1,57 @@
+form#form-request {
+    margin: 0;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 240px;
+    right: 0
+}
+
+form#form-request input#request {
+    border: 0;
+    padding: 10px;
+    width: 80%;
+    background: #fff;
+    float:left
+}
+
+form#form-request button {
+    width: 20%;
+    float:left
+}
+
+ul#response {
+    list-style-type: none;
+    margin: 0 0 0 240px;
+    padding: 0 0 58px;
+    overflow:auto;
+}
+
+ul#response li {
+    border-bottom:1px solid #b2dfdb
+}
+
+ul#response li .nickname {
+    width:150px;
+    border-right:1px solid #fff;
+    display:inline-block;
+    background:#b2dfdb;
+    padding:5px 10px 5px 5px;
+    text-align:right
+}
+ul#response li .message {
+    padding:5px 5px 5px 10px;
+}
+
+form#form-create {
+    margin-top:50px
+}
+
+@media only screen and (max-width : 992px) {
+    ul#response {
+        margin-left:0
+    }
+    form#form-request {
+        left:0
+    }
+}
